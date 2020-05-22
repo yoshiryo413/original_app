@@ -1,0 +1,172 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: pink;
+}
+
+// header
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color:#3a7bd5;
+  color:white;
+  display: flex;
+  position: relative;
+  position: fixed;
+}
+.header__nav {
+  display: flex;
+}
+.header__name {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 50px;
+  position: absolute;
+  left: 20px;
+}
+.nav {
+  display: flex;
+  line-height: 50px;
+  position: absolute;
+  right: 20px;
+}
+.nav__left , .nav__right {
+  padding: 0 10px 0 0;
+}
+
+// top
+
+.top {
+  background-image: url(rist1.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  color:#fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.4)
+}
+.top__body {
+  padding: 0 0 0 100px;
+}
+.top__title {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.top__text {
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+// middle
+.middle {
+  height: 600px;
+  background-color: #ffffff;
+}
+.middle__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 50px;
+}
+.middle__lists {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.middle__list {
+  width:calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+.middle__body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.middle__text {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.middle__sentence {
+  text-align: left;
+}
+
+// image
+.image {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+
+.image__daihyo {
+  width: 200px;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+// bottom
+.bottom {
+  height: 500px;
+  background-color:ghostwhite;
+}
+.bottom__title {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.bottom__body {
+  display: flex;
+  width: 100%;
+}
+.bottom__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.bottom__text {
+  font-size: 20px;
+  text-align: left;
+  // list-style:1;
+  width: 70%;
+}
+.bottom__name {
+  font-weight: bold;
+}
+
+// details
+
+.detail {
+  height: 200px;
+  background-color: #272727;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.detail__title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.detail__text {
+  margin: 8px;
+}
+.detail__name {
+ padding-top: 10px;
+}
