@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
  
-  root 'index#index'
-  
-  
-  
+root to: 'posts#index'
 
 
 end

@@ -9,7 +9,30 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+
   <body>
+<%# あとで編集 %>
+    <%# <header>
+    <div class="header">
+      <div class="header__nav">
+        <ul>
+          <li class="header__name">名波工務所</li>
+        </ul>
+        <ul class="nav">
+          <li class="nav__left"><a href="#">ログイン</a></li>
+          <li class="nav__right"><a href="#">新規登録</a></li>
+        </ul>
+      </div>
+    </div>
+  </header> %>
+
+  <div class="contents">
     <%= yield %>
+  </div>
+
   </body>
+
+  
+
 </html>
