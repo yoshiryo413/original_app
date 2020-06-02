@@ -1,0 +1,50 @@
+
+<header>
+  <div class="header">
+    <div class="header__nav">
+      <ul>
+        <li>
+         <%= link_to "名波工務所", "/", class: "header__name"%>
+        </li>
+      </ul>
+      <ul class="nav">
+      <li>
+        <li class="nav__right"><a href="#">ログアウト</a></li>
+      </li>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="form__contents">
+    <div class="form__content">
+      <div class="form__content__title">日報</div>
+      <div class="form__body">
+        <%= form_with model: @post, class: :form, local: true do |form| %>
+          <p class="form__text">・現場名 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :constructionsite, placeholder: :現場名, class: :form__title %>
+          <p class="form__text">・記入者名 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :writer, placeholder: :記入者, class: :form__title %>
+          <p class="form__text">・業態 <strong class="form__text__assist">必須</strong></p>
+          <%= form.radio_button :industrytype, :"搬入" %>
+          <%= form.label :industrytype, "搬入", {value: :"搬入", style: "display: inline-block;"} %>
+          <%= form.radio_button :industrytype, :"施工" %>
+          <%= form.label :industrytype, "施工", {value: :"施工", style: "display: inline-block;"} %>
+          <%= form.radio_button :industrytype, :"その他" %>
+          <%= form.label :industrytype, "その他", {value: :"その他", style: "display: inline-block;"} %>
+          <p class="form__text">・作業者名(メンバー) <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :members, placeholder: :作業者名, class: :form__title %>
+          <p class="form__text">・特記事項 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :comment, placeholder: :特記事項, class: :form__title %>
+          <p class="form__text">・高速料金/利用有無 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :highway, placeholder: :料金, class: :form__title %>
+          <p class="form__text">・終了時間 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :endtime, placeholder: :終了時間, class: :form__title %>
+          <p class="form__text">・残業有無(h) <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :overwork, placeholder: :残業, class: :form__title %>
+          <%= form.submit '投稿', class: :form__btn %>
+        <% end %>
+      </div>
+    </div>
+</div>

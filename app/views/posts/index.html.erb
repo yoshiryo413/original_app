@@ -1,27 +1,40 @@
 
-<body> 
-
-
-<% @posts.each do |post| %>
-  <div class="content">
-    <div class="content__left">
-      <div class="content__left--image">
-      <%= image_tag "material/nanami.png", alt: "rogo" , class: "content__left--logo" %>
-      </div>
-    </div>
-    <div class="content__right">
-      <div class="content__right__top">
-        <%= post.constructionsite %>
-      </div>
-      <div class="content__right__bottom">
-        <div class="content__right__bottom--date">
-        <%= post.created_at %>
-        </div>
-      </div>
+<header>
+  <div class="header">
+    <div class="header__nav">
+      <ul>
+        <li class="header__name">名波工務所</li>
+      </ul>
+      <ul class="nav">
+        <%= link_to "新規投稿", new_post_path, class: "nav__left" %>
+        <%= link_to "ログアウト", "#", class: "nav__right" %>
+      </ul>
     </div>
   </div>
+</header>
 
-<% end %>
-
-
-</body>
+<div class="contents">
+  <div class="contents-background">
+    <div class="content">
+      <% @posts.each do |post| %>
+        <div class="content__body">
+          <div class="content__left">
+            <div class="content__left--image">
+            <%= image_tag "material/nanami.png", alt: "rogo" , class: "content__left--logo" %>
+            </div>
+          </div>
+          <div class="content__right">
+            <div class="content__right__top">
+              <%= link_to post.constructionsite ,post_path(post.id) , class: "content__right__link"%>
+            </div>
+            <div class="content__right__bottom">
+              <div class="content__right__bottom--date">
+              <%= post.created_at %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

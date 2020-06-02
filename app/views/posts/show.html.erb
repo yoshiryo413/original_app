@@ -1,0 +1,61 @@
+<header>
+  <div class="header">
+    <div class="header__nav">
+      <ul>
+        <li>
+         <%= link_to "名波工務所", "/", class: "header__name"%>
+        </li>
+      </ul>
+      <ul class="nav">
+      <li>
+        <li class="nav__right"><a href="#">ログアウト</a></li>
+      </li>
+    </div>
+  </div>
+</header>
+
+<div class="show__contents">
+  <div class="show__content">
+    <div class="show__body">
+      <div class="show__edit">
+        <%= link_to "編集", edit_post_path(@post.id), class: "show__edit__btn"%>
+      </div>
+      <p class="show__text">現場名</p>
+      <div class="show__title">
+        <%= @post.constructionsite %>
+      </div>
+      <p class="show__text">作成日</p>
+      <div class="show__title">
+        <%= @post.created_at %>
+      </div>
+      <p class="show__text">記入者</p>
+      <div class="show__title">
+        <%= @post.writer %>
+      </div>
+      <p class="show__text">業態</p>
+      <div class="show__title">
+        <%= @post.industrytype %>
+      </div>
+      <p class="show__text">作業者(メンバー)</p>
+      <div class="show__title">
+        <%= @post.members %>
+      </div>
+      <p class="show__text">特記事項</p>
+      <div class="show__title">
+        <%= simple_format @post.comment %>
+      </div>
+      <p class="show__text">高速利用/有無</p>
+      <div class="show__title">
+        <%= @post.highway %>
+      </div>
+      <p class="show__text">終了時刻</p>
+      <div class="show__title">
+        <%= @post.endtime %>
+      </div>
+      <p class="show__text">残業/有無</p>
+      <div class="show__title">
+        <%= @post.overwork %>
+      </div>
+    </div>
+  </div>
+</div>

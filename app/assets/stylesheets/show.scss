@@ -1,0 +1,49 @@
+.show__contents {
+  padding-top: 50px;
+  background-image: url(material/sagyo.png);
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.show__content {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.show__body {
+  padding-top: 50px;
+ 
+}
+
+.show__title{
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  color: #232323;
+  background: #abebf1;
+  border-left: solid 10px #1b8ce9;
+  font-size: 18px;
+  text-align: center;
+  
+}
+.show__text {
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+

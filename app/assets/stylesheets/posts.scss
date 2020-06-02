@@ -1,16 +1,52 @@
 
-body {
-  padding: 30px 50px;
+.contents {
+  padding-top: 50px;
+  background-image: url(material/sagyo.png);
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .content {
+  background-color: #ffffff;
+  height: 100vh;
+  max-height: 780px;
+  width: 600px;
+  margin: 0 auto;
+}
+.content__body {
   display: flex;
 }
+
+.content__left {
+ padding: 1px 3px;
+}
 .content__left--image {
-  // width: 100px;
-  // height: 100px;
+
 }
 .content__left--logo {
-  width: 100px;
-  height: 100px;
+  width: 55px;
+  height: 55px;
+  border: solid 1px black;
+  border-radius: 5%;
+}
+
+.content__right {
+}
+.content__right__top {
+  font-size: 18px;
+}
+
+.content__right__link {
+  color: black;
+}
+.content__right__bottom {
+
+}
+
+.content__right__bottom--date {
+  border-bottom: solid 1px black;
 }
