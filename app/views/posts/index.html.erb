@@ -3,7 +3,7 @@
   <div class="header">
     <div class="header__nav">
       <ul>
-        <li class="header__name">名波工務所</li>
+      <li><%= link_to "名波工務所", posts_path, class: "header__name" %></li>
       </ul>
       <ul class="nav">
         <%= link_to "新規投稿", new_post_path, class: "nav__left" %>
@@ -16,6 +16,7 @@
 <div class="contents">
   <div class="contents-background">
     <div class="content">
+    <div class="content__title">名波工務所</div>
       <% @posts.each do |post| %>
         <div class="content__body">
           <div class="content__left">
@@ -26,8 +27,10 @@
           <div class="content__right">
             <div class="content__right__top">
               <%= link_to post.constructionsite ,post_path(post.id) , class: "content__right__link"%>
+              <%= post.writer %>
             </div>
             <div class="content__right__bottom">
+              
               <div class="content__right__bottom--date">
               <%= post.created_at %>
               </div>

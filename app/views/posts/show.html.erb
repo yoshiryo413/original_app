@@ -3,7 +3,7 @@
     <div class="header__nav">
       <ul>
         <li>
-         <%= link_to "名波工務所", "/", class: "header__name"%>
+         <%= link_to "名波工務所", posts_path, class: "header__name"%>
         </li>
       </ul>
       <ul class="nav">
@@ -17,8 +17,10 @@
 <div class="show__contents">
   <div class="show__content">
     <div class="show__body">
+      <div class="show__content__title">日報</div>
       <div class="show__edit">
         <%= link_to "編集", edit_post_path(@post.id), class: "show__edit__btn"%>
+        <%= link_to "削除", post_path(@post.id), method: :delete, class: "show__edit__btn"%>
       </div>
       <p class="show__text">現場名</p>
       <div class="show__title">
