@@ -7,7 +7,7 @@
       <ul class="nav">
       <% if user_signed_in? %>
         <li><%= link_to "新規投稿", new_user_session_path, class: "nav__left" %></li>
-        <li><%= link_to "ログアウト", new_user_registration_path, class: "nav__right" %></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, class: "nav__right" %></li>
       <% else %>
         <%= link_to "ログイン", new_user_session_path, class: "nav__left" %>
         <%= link_to "新規登録", new_user_registration_path, class: "nav__right" %>
@@ -68,18 +68,20 @@
       </div>
     </div>
   </div>
-</div>
 
-<footer>
-  <div class="details">
-    <div class="detail">
-      <p class="detail__title">会社情報</p>
-      <ul>
-        <li class="detail__text">住所：愛知県名古屋市守山区瀬古東2丁目1113ナカハイツ303</li>
-        <li class="detail__text">電話番号：052-737-8773</li>
-        <li class="detail__text">メール：nnm_nagoya@ktb.biglobe.ne.jp</li>
-      </ul>
-      <div class="detail__name">©️有限会社 名波工務所</div>
+
+  <footer>
+    <div class="details">
+      <div class="detail">
+        <p class="detail__title">会社情報</p>
+        <ul>
+          <li class="detail__text">住所：愛知県名古屋市守山区瀬古東2丁目1113ナカハイツ303</li>
+          <li class="detail__text">電話番号：052-737-8773</li>
+          <li class="detail__text">メール：nnm_nagoya@ktb.biglobe.ne.jp</li>
+        </ul>
+        <div class="detail__name">©️有限会社 名波工務所</div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+</div>

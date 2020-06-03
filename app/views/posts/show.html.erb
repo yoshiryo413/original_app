@@ -8,7 +8,8 @@
       </ul>
       <ul class="nav">
       <li>
-        <li class="nav__right"><a href="#">ログアウト</a></li>
+        <%= link_to current_user.id, user_path(current_user), class: "header__right--btn" %>
+        <li><%= link_to "ログアウト",destroy_user_session_path , class: "nav__right" %></li>
       </li>
     </div>
   </div>
@@ -19,8 +20,10 @@
     <div class="show__body">
       <div class="show__content__title">日報</div>
       <div class="show__edit">
-        <%= link_to "編集", edit_post_path(@post.id), class: "show__edit__btn"%>
-        <%= link_to "削除", post_path(@post.id), method: :delete, class: "show__edit__btn"%>
+        <% if user_signed_in? && current_user.id == @post.user_id %>
+          <%= link_to "編集", edit_post_path(@post.id), class: "show__edit__btn"%>
+          <%= link_to "削除", post_path(@post.id), method: :delete, class: "show__edit__btn"%>
+        <% end %>
       </div>
       <p class="show__text">現場名</p>
       <div class="show__title">

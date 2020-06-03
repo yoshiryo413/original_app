@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(7)
   end
 
   def new
@@ -30,12 +30,12 @@ class PostsController < ApplicationController
   def destroy
     post = Post.find(params[:id])
     post.destroy
-    redirect_to root_path
+    redirect_to posts_path
   end
 
   private
   def post_params
-    params.require(:post).permit(:constructionsite,:writer,:industrytype,:members,:comment,:highway,:endtime,:overwork)
+    params.require(:post).permit(:constructionsite,:writer,:industrytype,:members,:comment,:highway,:endtime,:overwork).merge(user_id: current_user.id)
   end
 
 end
