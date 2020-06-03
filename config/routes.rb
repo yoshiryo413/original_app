@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   resources :index , only: :index
   resources :posts
   resources :users, only: :show
+  # collection do
+  #   get :search
+  # end
+  namespace :posts do
+    resources :searches, only: :index
+  end
 end

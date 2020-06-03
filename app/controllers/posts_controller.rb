@@ -33,6 +33,10 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def search
+    @search = Post.search(params[:keyword])
+  end
+
   private
   def post_params
     params.require(:post).permit(:constructionsite,:writer,:industrytype,:members,:comment,:highway,:endtime,:overwork).merge(user_id: current_user.id)

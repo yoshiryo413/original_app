@@ -13,7 +13,7 @@
 .content {
   background-color: #ffffff;
   height: 100vh;
-  max-height: 780px;
+  max-height: 800px;
   width: 600px;
   margin: 0 auto;
 }
@@ -65,8 +65,20 @@ margin: 20px 0 0 0;
 .content__right__bottom--date {
 }
 
+.content__return {
+  color: black;
+  text-align: center;
+  margin: 8px;
+}
+.content__return__btn {
+  color: black;
+}
+
 .content__footer {
   background-color: rgb(35, 143, 201);
   text-align: center;
-  margin-top: 23px;
+  margin-top: 20px;
+  height: 29px;
+  line-height: 29px;
+  padding: 5px;
 }
