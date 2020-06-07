@@ -25,10 +25,10 @@ a:active {
   display: flex;
   position: relative;
   position: fixed;
+  z-index: 1;
 }
 .header__nav {
   display: flex;
-
 }
 .header__name {
   font-size: 26px;
@@ -37,13 +37,11 @@ a:active {
   position: absolute;
   left: 20px;
 }
-
 .header__from {
   position: absolute;
   left: 40%;
-  top: 13px;
+  top: 7px;
 }
-
 .header__from__text {
   display: inline-block;
   padding: 0.3em 1em;
@@ -53,11 +51,11 @@ a:active {
   border-radius: 3px;
   transition: .4s;
   width: 200px;
+  height: 25px;
 }
-
 .header__from__btn {
   display: inline-block;
-  padding: 0.2em 1em;
+  padding: 0.1em 1em;
   text-decoration: none;
   color: #67c5ff;
   border: solid 2px #67c5ff;
@@ -69,8 +67,6 @@ a:active {
   background: #67c5ff;
   color: white;
 }
-
-
 .nav {
   display: flex;
   line-height: 50px;
@@ -99,10 +95,12 @@ a:active {
 .top__title {
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 30px 0;
 }
 .top__text {
   font-size: 24px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 10px 0;
 }
 
 // middle
@@ -139,6 +137,91 @@ a:active {
 .middle__sentence {
   text-align: left;
 }
+
+// test
+
+.test {
+  height:500px;
+  background-color: rgb(168, 164, 164);
+  width: 100%;
+}
+.test__title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.text__body {
+  display: flex;
+  
+}
+.test__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.test__right__title {
+  font-weight: bold;
+}
+.test__right__text {
+}
+.test__left {
+position: relative;
+}
+.text__image__one {
+  width: 430px;
+  height: 300px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
+}
+.text__image__second {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
+}
+
+.exam {
+  height:500px;
+  background-color: rgb(168, 164, 164);
+  width: 100%;
+}
+.exam__title {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.exam__body {
+  display: flex;
+}
+
+.exam__left {
+  position: relative;
+  width: 50%;
+}
+.exam__image__one{
+  width: 430px;
+  height: 300px;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
+}
+.exam__image__second{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
+}
+
+
 
 // image
 .image {
