@@ -14,8 +14,12 @@ a:hover {
 a:active {
   color:rgb(233, 90, 90);
 }
-
 // header
+
+* {
+  // font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
 
 .header {
   height: 50px;
@@ -83,7 +87,7 @@ a:active {
   background-image: url(material/kichin.png);
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 750px;
   display: flex;
   align-items: center;
   color:#fff;
@@ -103,77 +107,54 @@ a:active {
   margin: 10px 0;
 }
 
-// middle
-.middle {
-  height: 600px;
-  background-color: #ffffff;
-}
-.middle__title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
-  padding: 50px;
-}
-.middle__lists {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.middle__list {
-  width:calc(100% / 3);
-  display: flex;
-  flex-direction: column;
-}
-.middle__body {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-.middle__text {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-.middle__sentence {
-  text-align: left;
-}
-
 // test
 
 .test {
-  height:500px;
-  background-color: rgb(168, 164, 164);
+  height:590px;
+  background-color: #fff;
   width: 100%;
 }
 .test__title {
   text-align: center;
-  font-size: 30px;
-  padding: 10px 0;
+  font-size: 35px;
+  padding: 20px 0 5px 0;
+}
+.test__title__cover {
+  width: 100px;
+  height: 5px;
+  background-color: #3a7bd5;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .text__body {
   display: flex;
-  
 }
-.test__right {
-  width: 50%;
+.test__left {
+  width: calc(100% - 60%);
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-left: 70px;
 }
-.test__right__title {
+.test__left__title {
   font-weight: bold;
+  font-size: 32px;
+  margin: 40px 0;
 }
-.test__right__text {
+.test__left__text {
+  margin: 0 auto;
+  font-size: 22px;
+  
 }
-.test__left {
+.test__right {
 position: relative;
 }
 .text__image__one {
   width: 430px;
   height: 300px;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 10px;
+  left: 80px;
   box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
 }
 .text__image__second {
@@ -181,13 +162,15 @@ position: relative;
   height: 300px;
   position: absolute;
   top: 150px;
-  left: 150px;
+  left: 200px;
   box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
 }
 
+// exam
+
 .exam {
-  height:500px;
-  background-color: rgb(168, 164, 164);
+  height:590px;
+  background-color:#F5F5F5;
   width: 100%;
 }
 .exam__title {
@@ -202,7 +185,8 @@ position: relative;
 
 .exam__left {
   position: relative;
-  width: 50%;
+  width: calc(100% - 60%);
+  margin-left: 70px;
 }
 .exam__image__one{
   width: 430px;
@@ -217,31 +201,87 @@ position: relative;
   height: 300px;
   position: absolute;
   top: 150px;
-  left: 150px;
+  left: 130px;
   box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
+}
+
+.exam__right {
+  width: 40%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.exam__right__title {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 40px 0;
+  
+}
+
+.exam__right__text {
+  margin: 0 auto;
+  font-size: 22px;
+  
+}
+
+// middle
+.middle {
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.middle__body {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+.middle__lists {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.middle__list {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.middle__text {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.middle__explain {
+
+  width: 30%;
+  margin: 20px auto;
+  font-size: 22px;
+
 }
 
 
 
 // image
 .image {
-  width: 150px;
-  height: 150px;
-  border: 2px solid black;
-  border-radius: 5%;
+  width: 200px;
+  height: 200px;
   margin-bottom: 20px;
+  box-shadow: 5px 5px 5px rgba(102, 68, 0, 0.5);
 }
 
 .image__daihyo {
-  width: 200px;
-  height: 200px;
-  padding-bottom: 20px;
+  width: 230px;
+  height: 230px;
 }
 
 // bottom
 .bottom {
   height: 500px;
-  background-color:ghostwhite;
+  background-color:#F5F5F5;
 }
 .bottom__title {
   text-align: center;
@@ -256,14 +296,14 @@ position: relative;
 .bottom__img {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 30%;
+  text-align: center;
+  width: 40%;
 }
 .bottom__text {
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 23px;
   text-align: left;
-  // list-style:1;
-  width: 70%;
+  width: 50%;
 }
 .bottom__name {
   font-weight: bold;
