@@ -8,14 +8,12 @@
       </ul>
       <ul class="nav">
       <li>
-        <%= link_to current_user.id, user_path(current_user), class: "header__right--btn" %>
+        <%= link_to current_user.name, user_path(current_user), class: "header__right--btn" %>
         <li><%= link_to "ログアウト",destroy_user_session_path , class: "nav__right" %></li>
       </li>
     </div>
   </div>
 </header>
-
-
 
 <div class="form__contents">
     <div class="form__content">
@@ -39,6 +37,8 @@
           <%= form.text_field :comment, placeholder: :特記事項, class: :form__title %>
           <p class="form__text">・高速料金/利用有無 <strong class="form__text__assist">必須</strong></p>
           <%= form.text_field :highway, placeholder: :料金, class: :form__title %>
+          <p class="form__text">・交通費/有無 <strong class="form__text__assist">必須</strong></p>
+          <%= form.text_field :travel_cost, placeholder: :金額, class: :form__title %>
           <p class="form__text">・終了時間 <strong class="form__text__assist">必須</strong></p>
           <%= form.text_field :endtime, placeholder: :終了時間, class: :form__title %>
           <p class="form__text">・残業有無(h) <strong class="form__text__assist">必須</strong></p>

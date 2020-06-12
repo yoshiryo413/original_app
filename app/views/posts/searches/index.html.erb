@@ -11,7 +11,7 @@
       </li>
       </ul>
       <ul class="nav">
-        <%= link_to current_user.id, user_path(current_user), class: "header__right--btn" %>
+        <%= link_to current_user.name, user_path(current_user), class: "header__right--btn" %>
         <%= link_to "新規投稿", new_post_path, class: "nav__left" %>
         <%= link_to "ログアウト",destroy_user_session_path , class: "nav__right" %>
       </ul>

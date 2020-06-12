@@ -8,7 +8,7 @@
       </ul>
       <ul class="nav">
       <li>
-        <%= link_to current_user.id, user_path(current_user), class: "header__right--btn" %>
+        <%= link_to current_user.name, user_path(current_user), class: "header__right--btn" %>
         <li><%= link_to "ログアウト",destroy_user_session_path , class: "nav__right" %></li>
       </li>
     </div>
@@ -52,6 +52,10 @@
       <p class="show__text">高速利用/有無</p>
       <div class="show__title">
         <%= @post.highway %>
+      </div>
+       <p class="show__text">交通費/有無</p>
+      <div class="show__title">
+        <%= @post.travel_cost %>
       </div>
       <p class="show__text">終了時刻</p>
       <div class="show__title">
