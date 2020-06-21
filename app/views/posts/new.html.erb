@@ -46,8 +46,9 @@
           <%= form.text_field :endtime, placeholder: :終了時間, class: :form__title %>
           <p class="form__text">・残業有無(h) <strong class="form__text__assist">必須</strong></p>
           <%= form.text_field :overwork, placeholder: :残業, class: :form__title %>
-          <%= form.submit '投稿', class: :form__btn %>
+          <%= form.submit '投稿', class: :form__btn , id: :submitbtn %>
         <% end %>
       </div>
     </div>
 </div>
+

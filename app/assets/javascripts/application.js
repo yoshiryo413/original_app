@@ -14,3 +14,16 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery 
+//= require jquery_ujs 
+
+
+$(function(){
+  $('#submitbtn').on('click',function(){
+    if($('.form').val() === ''){
+      alert('空欄があります。');
+    } else {
+      alert("送信されました");
+    }
+  });
+});
