@@ -9,7 +9,6 @@
   height: 100vh;
   width: 100%;
 }
-
 .content {
   background-color: #ffffff;
   height: 100vh;
@@ -29,12 +28,8 @@
   justify-content: center;
   margin: 20px 0 0 0 ;
 }
-
 .content__left {
- padding: 1px 3px;
-}
-.content__left--image {
-
+  padding: 1px 3px;
 }
 .content__left--logo {
   width: 65px;
@@ -42,7 +37,6 @@
   border: solid 1px black;
   border-radius: 5%;
 }
-
 .content__right {
   border-bottom: 1px solid grey;
 }
@@ -50,21 +44,17 @@
   font-size: 18px;
   color: rgb(155, 150, 150);
 }
-
 .content__right__writer {
   color: rgb(155, 150, 150);
 }
-
 .content__right__link {
   color: black;
 }
 .content__right__bottom {
 margin: 20px 0 0 0;
 }
-
 .content__right__bottom--date {
 }
-
 .content__return {
   color: black;
   text-align: center;
@@ -73,7 +63,6 @@ margin: 20px 0 0 0;
 .content__return__btn {
   color: black;
 }
-
 .content__footer {
   background-color: rgb(35, 143, 201);
   text-align: center;

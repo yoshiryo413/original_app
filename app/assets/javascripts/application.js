@@ -14,43 +14,6 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//= require jquery 
-//= require jquery_ujs 
-
-
-$(function(){
-  $('#submitbtn').on('click',function(){
-    if($('.form').val() === ''){
-      alert('空欄があります。');
-    } else {
-      alert("送信されました");
-    }
-  });
-
-  $('.top__title').hover(function(){
-    $('.top__title').animate({'fontSize':'55px'},500);
-  },
-  function(){
-    $('.top__title').animate({'fontSize':'40px'}),500;
-  });
-
-
-
-
-  $('.recruit__link').hover(function(){
-    $('.recruit__link').animate({'fontSize':'22px'},500);
-  },
-  function(){
-    $('.recruit__link').animate({'fontSize':'18px'}),500;
-  });
-
-  $(window).resize(function(){
-    var w = $(window).width();
-    if (w > 700){
-      $('.text__image__one').css('display','block')
-    }
-  });
- 
-
-});
-
+//= require jquery
+//= require jquery_ujs
+//= require bxslider

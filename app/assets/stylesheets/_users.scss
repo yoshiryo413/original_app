@@ -1,20 +1,17 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ログインと新規のCSS
 
 h2 {
   text-align: center;
-  margin: 30px 0;
   font-size: 30px;
 }
 #new_user {
   width: 400px;
-  height: 200px;
-  margin: 0 auto;
+  height: 300px;
+  margin: 70px auto;
   border-radius: 50px;
   background-color:#3a7bd5;
   font-size: 18px;
-  
 }
 .field {
   text-align: center;
@@ -22,7 +19,7 @@ h2 {
   padding: 10px 0;
   color: #fff;
 }
-#user_email,#user_password  {
+#user_email,#user_password ,#user_name,#user_password_confirmation {
   width: 300px;
   border-radius: 100px;
   font-size: 100%;
@@ -31,20 +28,20 @@ h2 {
   text-align: center;
 }
 .action__btn {
-  border-radius : 5%; 
-  font-size : 15pt; 
-  text-align : center; 
-  cursor : pointer; 
-  padding : 12px 12px; 
-  background :#3a7bd5; 
-  color: #ffffff; 
-  line-height : 1em; 
-  transition : .3s; 
-  box-shadow : 6px 6px 3px #666666; 
-  border : 2px solid rgba(35, 150, 243, 0.93); 
+  border-radius : 5%;
+  font-size : 15pt;
+  text-align : center;
+  cursor : pointer;
+  padding : 12px 12px;
+  background :#3a7bd5;
+  color: #ffffff;
+  line-height : 1em;
+  transition : .3s;
+  box-shadow : 6px 6px 3px #666666;
+  border : 2px solid rgba(35, 150, 243, 0.93);
 }
 .action__btn:hover {
-  box-shadow : none; 
+  box-shadow : none;
   color : #3a7bd5;
   background : #ffffff;
 }

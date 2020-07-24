@@ -2,11 +2,15 @@
 <html>
 
   <head>
-    <title>名波工務所</title>
+    <title>〇〇工務所</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+
   </head>
 
 <body>
@@ -14,15 +18,15 @@
   <div class="header">
     <div class="header__name">
       <ul class="header__name__ul">
-        <li class="header__name__li">名波工務所</li>
+        <li class="header__name__li">〇〇工務所</li>
       </ul>
     </div>
     <% if user_signed_in? %>
-      <div class="header__form">
-        <ul class="header__form__nav">
+      <div class="header__name__form">
+        <ul class="header__name__form__nav">
           <li><%= form_with(url: posts_searches_path , local: true, method: :get, class: "#") do |form| %></li>
-          <li><%= form.text_field :keyword, placeholder: "現場名で検索", class: "header__form__text" %></li>
-          <li><%= form.submit "検索", class: "header__form__btn" %></li>
+          <li><%= form.text_field :keyword, placeholder: "現場名で検索", class: "header__name__form__text" %></li>
+          <li><%= form.submit "検索", class: "header__name__form__btn" %></li>
           <% end %>
         </ul>
       </div>
