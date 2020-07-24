@@ -11,6 +11,7 @@
   width: 100%;
   display: flex;
 }
+
 .show__content {
   background-color: #ffffff;
   max-height: 150vh;
@@ -19,15 +20,18 @@
   display: flex;
   justify-content: center;
 }
+
 .show__body {
   padding-top: 10px;
 }
+
 .show__content__title {
   margin: 10px 0;
   font-size: 30px;
   text-align: center;
   display: block;
 }
+
 .show__edit {
   width: 100%;
   height: 20px;
@@ -36,6 +40,7 @@
   justify-content: center;
   margin-bottom: 10px;
 }
+
 .show__edit__btn {
   background-color: #8be4f0;
   display: block;
@@ -49,6 +54,7 @@
   border-radius: 50px;
   margin: 0 5px;
 }
+
 .show__text {
   padding: 0.5em 1em;
   margin: 0.5em 0;
@@ -61,6 +67,7 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .show__title{
   padding: 0.5em 1em;
   margin: 1em 0;

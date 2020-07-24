@@ -1,4 +1,5 @@
 
+
 .form__contents {
   padding-top: 50px;
   background-image: url(material/sagyo.png);
@@ -10,6 +11,7 @@
   width: 100%;
   display: flex;
 }
+
 .form__content {
   background-color: #ffffff;
   height: 100vh;
@@ -17,26 +19,31 @@
   width: 600px;
   margin: 0 auto;
 }
+
 .form__content__title {
   padding-top: 20px;
   font-size: 30px;
   text-align: center;
   display: block;
 }
+
 .form__body {
   display: flex;
   justify-content: center;
 }
+
 .form__text {
   font-size: 14px;
   font-weight: bold;
   margin: 10px 0;
 }
+
 .form__text__assist {
 background-color: rgb(211, 56, 56);
 font-size: 13px;
 color: #ffffff;
 }
+
 .form__title {
   width: 300px;
   height: 40px;
@@ -45,6 +52,7 @@ color: #ffffff;
   align-items: center;
   font-size: 100%;
 }
+
 .form__btn {
   width: 300px;
   height: 40px;
