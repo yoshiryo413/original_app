@@ -29,24 +29,30 @@ a:active {
   position: relative;
   position: fixed;
   z-index: 1;
+  justify-content:space-between;
+  &__name {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-left: 30px;
+  } &__name__nav {
+    display: flex;
+  } &__name__navList {
+    display: flex;
+    line-height: 60px;
+    font-size: 17px;
+  } &__name__navList li {
+    margin-right: 20px;
+  }
 }
-.header__nav {
+
+// headerのボタンCSS
+
+.header__form__nav {
   display: flex;
-}
-.header__name {
-  font-size: 26px;
-  font-weight: bold;
   line-height: 60px;
-  position: absolute;
-  left: 20px;
 }
-.header__from {
-  position: absolute;
-  left: 40%;
-  top: 7px;
-}
-.header__from__text {
-  display: inline-block;
+.header__form__text {
   padding: 0.3em 1em;
   text-decoration: none;
   color: black;
@@ -55,9 +61,9 @@ a:active {
   transition: .4s;
   width: 200px;
   height: 25px;
+  margin-right: 5px;
 }
-.header__from__btn {
-  display: inline-block;
+.header__form__btn {
   padding: 0.1em 1em;
   text-decoration: none;
   color: #67c5ff;
@@ -70,17 +76,8 @@ a:active {
   background: #67c5ff;
   color: white;
 }
-.nav {
-  display: flex;
-  line-height: 60px;
-  position: absolute;
-  right: 20px;
-}
-.header__right--btn, .nav__left , .nav__right {
-  padding: 0 20px 0 0;
-  font-size: 19px;
 
-}
+
 
 // top
 
@@ -147,7 +144,7 @@ a:active {
 .test__left__text {
   margin: 0 auto;
   font-size: 22px;
-  
+
 }
 .test__right {
 position: relative;
@@ -217,7 +214,7 @@ position: relative;
   font-weight: bold;
   font-size: 32px;
   margin: 40px 0;
-  
+
 }
 .exam__right__text {
   margin: 0 auto;
@@ -326,7 +323,7 @@ position: relative;
   position: absolute;
   top: 60px;
   left: 120px;
-  box-shadow: 2px 2px 0 0 #939191 ; 
+  box-shadow: 2px 2px 0 0 #939191 ;
 }
 .recruit__text {
   position: absolute;

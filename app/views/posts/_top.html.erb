@@ -16,7 +16,6 @@
               <%= post.writer %>
             </div>
             <div class="content__right__bottom">
-
               <div class="content__right__bottom--date">
               <%= post.created_at %>
               </div>
@@ -25,7 +24,7 @@
         </div>
       <% end %>
       <div class="content__return">
-        <%= link_to "トップページ", posts_path, class: "content__return__btn"%>
+        <%= link_to "TOPへ", posts_path, class: "content__return__btn"%>
         </div>
       <div class=content__footer>
         <%= paginate(@posts) %>
