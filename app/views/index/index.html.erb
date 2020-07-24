@@ -1,21 +1,4 @@
-<header>
-  <div class="header">
-    <div class="header__nav">
-      <ul>
-        <li class="header__name">名波工務所</li>
-      </ul>
-      <ul class="nav">
-      <% if user_signed_in? %>
-        <li><%= link_to "新規投稿", new_user_session_path, class: "nav__left" %></li>
-        <li><%= link_to "ログアウト", destroy_user_session_path, class: "nav__right" %></li>
-      <% else %>
-        <%= link_to "ログイン", new_user_session_path, class: "nav__left" %>
-        <%= link_to "新規登録", new_user_registration_path, class: "nav__right" %>
-        <% end %>
-      </ul>
-    </div>
-  </div>
-</header>
+
 
 <div class="contents">
 
@@ -37,10 +20,10 @@
       </div>
       <div class="test__right">
         <div class="test__right__title">
-          <%= image_tag "material/3.png", alt: "写真" , class: "text__image__one"%> 
+          <%= image_tag "material/3.png", alt: "写真" , class: "text__image__one"%>
         </div>
         <div class="test__left__text">
-          <%= image_tag "material/4.png", alt: "写真" , class: "text__image__second"%> 
+          <%= image_tag "material/4.png", alt: "写真" , class: "text__image__second"%>
         </div>
       </div>
     </div>
@@ -52,10 +35,10 @@
     <div class="exam__body">
       <div class="exam__left">
         <div class="exam__left__title">
-          <%= image_tag "material/1.png", alt: "写真" , class: "exam__image__one"%> 
+          <%= image_tag "material/1.png", alt: "写真" , class: "exam__image__one"%>
         </div>
         <div class="exam__left__text">
-          <%= image_tag "material/2.png", alt: "写真" , class: "exam__image__second"%> 
+          <%= image_tag "material/2.png", alt: "写真" , class: "exam__image__second"%>
         </div>
       </div>
       <div class="exam__right">
@@ -108,7 +91,7 @@
   </div>
 
   <div class="recruit">
-    <div class="recruit__body"> 
+    <div class="recruit__body">
       <div class="recruit__title"> 採用情報</div>
       <div class="recruit__text">
         <%= link_to "アルバイト・採用情報はこちら", "#", class: "recruit__link" %>

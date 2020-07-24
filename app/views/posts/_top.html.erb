@@ -1,10 +1,9 @@
 
-
 <div class="contents">
   <div class="contents-background">
     <div class="content">
     <div class="content__title">名波工務所</div>
-      <% @search.each do |post| %>
+      <% @posts.each do |post| %>
         <div class="content__body">
           <div class="content__left">
             <div class="content__left--image">
@@ -25,7 +24,11 @@
           </div>
         </div>
       <% end %>
+      <div class="content__return">
+        <%= link_to "トップページ", posts_path, class: "content__return__btn"%>
+        </div>
       <div class=content__footer>
+        <%= paginate(@posts) %>
       </div>
     </div>
   </div>
