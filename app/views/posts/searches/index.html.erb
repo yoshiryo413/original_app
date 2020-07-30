@@ -1,0 +1,35 @@
+
+
+<div class="contents">
+  <div class="contents-background">
+    <div class="content">
+    <div class="content__title">名波工務所</div>
+      <% @search.each do |post| %>
+        <div class="content__body">
+          <div class="content__left">
+            <div class="content__left--image">
+            <%= image_tag "material/nanami.png", alt: "rogo" , class: "content__left--logo" %>
+            </div>
+          </div>
+          <div class="content__right">
+            <div class="content__right__top">
+              <%= link_to post.constructionsite ,post_path(post.id) , class: "content__right__link"%>
+              <%= post.writer %>
+            </div>
+            <div class="content__right__bottom">
+
+              <div class="content__right__bottom--date">
+              <%= post.created_at %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="content__return">
+        <%= link_to "TOPへ", posts_path, class: "content__return__btn"%>
+        </div>
+      <div class=content__footer>
+      </div>
+    </div>
+  </div>
+</div>
