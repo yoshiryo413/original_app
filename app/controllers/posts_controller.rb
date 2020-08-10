@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   def index
     # N+1問題の解決
     # 降順で一ページに7つまで表示
-    # @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(7)
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(7)
   end
 
   def new

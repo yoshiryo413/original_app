@@ -31,7 +31,7 @@
       </div>
       <div class="header__name__nav">
         <ul class="header__name__navList">
-          <li><%= link_to current_user.name, user_path(current_user), class: "header__right--btn" %></li>
+          <li><%= link_to current_user.nickname, user_path(current_user), class: "header__right--btn" %></li>
           <li><%= link_to "新規投稿",new_post_path , class: "nav__left" %></li>
           <li><%= link_to "ログアウト", destroy_user_session_path, class: "nav__right" %></li>
         </ul>
