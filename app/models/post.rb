@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   
-  validates :constructionsite,:writer,:industrytype,:members,:comment,:highway,:endtime,:overwork, presence: true
+  validates :constructionsite,:writer,:industrytype,:members,:comment,:highway,:endtime,:overwork,:travel_cost, presence: true
   belongs_to :user
 
   def self.search(search)

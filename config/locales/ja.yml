@@ -1,0 +1,17 @@
+
+
+ja:
+  activerecord:
+    attributes:
+      post:
+        constructionsite: 現場名
+        writer: 記入者
+        industrytype: 形態
+        members: メンバー
+        comment: 特記事項
+        highway: 高速料金
+        endtime: 終了時間
+        overwork: 残業
+        travel_cost: 交通費
+        
+        

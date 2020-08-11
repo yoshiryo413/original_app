@@ -1,7 +1,10 @@
 
+
+
 <div class="form__contents">
     <div class="form__content">
       <div class="form__content__title">日報</div>
+      <%= render 'error_messages'%>
       <div class="form__body">
         <%= form_with model: @post, class: :form, local: true do |form| %>
           <p class="form__text">・現場名 <strong class="form__text__assist">必須</strong></p>
