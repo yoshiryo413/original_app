@@ -9,6 +9,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string  :highway          , null: false
       t.string  :endtime          , null: false
       t.string  :overwork         , null: false
+      t.string  :travel_cost      , null: false
       t.timestamps
     end
   end
